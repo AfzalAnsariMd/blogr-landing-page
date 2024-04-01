@@ -50,6 +50,9 @@ body {
   );
   height: 80vh;
   border-radius: 0px 0px 0px 100px;
+  background-size: cover; /* Ensure the background image covers the entire background without resizing */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed;
 }
 
 .fon1 {
@@ -111,7 +114,7 @@ body {
 .bnt{
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
+    column-gap: 20px;
     /* height: 100px; */
     margin-top: 30px;
 
@@ -130,6 +133,77 @@ body {
 }
 .b2{
     /* color:white; */
-    background-color:  hsl(13, 100%, 72%);
-    border :2px solid white
+    /* background-color:  hsl(13, 100%, 72%); */
+    /* border :2px solid white */
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid white;
+    padding: 10px;
+    /* border-radius: 29px; */
+    color: white;
+    border-radius: 50px;
+    width: 100px;
+}
+.frt{
+  text-align: center;
+  color: hsl(237, 17%, 21%);
+  margin-top: 330px;
+}
+
+.flex-grid-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+}
+
+.content{
+  border:3px solid mediumspringgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 80px;
+}
+.images{
+  border:3px solid mediumorchid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 380px;
+  overflow: hidden;
+}
+.sub-content1,.sub-content2{
+  display: flex;
+  flex-direction: column ;
+  row-gap: 24px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.sub-content1>h1{
+  font-size:25px ;
+  color:hsl(237, 23%, 32%);
+  /* background-color: rebeccapurple; */
+}
+.sub-content1>p{
+  line-height: 30px;
+}
+.sub-content2>p{
+  line-height: 30px;
+}
+.sub-content2>h1{
+  font-size:25px ;
+  color: hsl(237, 23%, 32%);
+  /* background-color: rebeccapurple; */
+}
+.full-flex-grid-3{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+  /* overflow: hidden; */
+}
+.full-image{
+  /* background-color: black; */
 }
