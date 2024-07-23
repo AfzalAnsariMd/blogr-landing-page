@@ -43,6 +43,9 @@ body {
 }
 .cover {
   /* margin-top: 65px;     */
+  /* display: flex;
+  flex-direction: column;
+  row-gap: 80px; */
   background: linear-gradient(
     to right,
     hsl(13, 100%, 72%),
@@ -51,8 +54,8 @@ body {
   height: 80vh;
   border-radius: 0px 0px 0px 100px;
   background-size: cover; /* Ensure the background image covers the entire background without resizing */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-attachment: fixed;
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed;
 }
 
 .fon1 {
@@ -111,99 +114,155 @@ body {
     font-size: 16px;
     margin-top: 11px;
 } */
-.bnt{
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    /* height: 100px; */
-    margin-top: 30px;
-
+.bnt {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  /* height: 100px; */
+  margin-top: 30px;
 }
-.bnt>button{
-    padding: 10px;
-    /* border: none; */
-    border-radius: 50px;
-    width: 120px;
-
-
+.bnt > button {
+  padding: 10px;
+  /* border: none; */
+  border-radius: 50px;
+  width: 120px;
 }
-.b1{
-    color:hsl(353, 100%, 62%);
-    border: none;
+.b1 {
+  color: hsl(353, 100%, 62%);
+  border: none;
 }
-.b2{
-    /* color:white; */
-    /* background-color:  hsl(13, 100%, 72%); */
-    /* border :2px solid white */
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    border: 1px solid white;
-    padding: 10px;
-    /* border-radius: 29px; */
-    color: white;
-    border-radius: 50px;
-    width: 100px;
+.b2 {
+  /* color:white; */
+  /* background-color:  hsl(13, 100%, 72%); */
+  /* border :2px solid white */
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid white;
+  padding: 10px;
+  /* border-radius: 29px; */
+  color: white;
+  border-radius: 50px;
+  width: 100px;
 }
-.frt{
+.frt {
   text-align: center;
   color: hsl(237, 17%, 21%);
   margin-top: 330px;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  font-size: 40px;
+}
+.lefti {
+  /* margin-left: 140px; */
+  margin-left: 90px;
 }
 
-.flex-grid-3{
+.flex-grid-3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-
+  margin-top: 270px;
+  margin-bottom: 60px;
 }
 
-.content{
-  border:3px solid mediumspringgreen;
+.content {
+  /* border:3px solid mediumspringgreen; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 80px;
 }
-.images{
-  border:3px solid mediumorchid;
+.images {
+  /* border:3px solid mediumorchid; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 380px;
   overflow: hidden;
 }
-.sub-content1,.sub-content2{
+.sub-content1,
+.sub-content2 {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   row-gap: 24px;
-  width: 500px;
+  width: 600px;
   justify-content: center;
   align-items: center;
 }
-.sub-content1>h1{
-  font-size:25px ;
-  color:hsl(237, 23%, 32%);
-  /* background-color: rebeccapurple; */
-}
-.sub-content1>p{
-  line-height: 30px;
-}
-.sub-content2>p{
-  line-height: 30px;
-}
-.sub-content2>h1{
-  font-size:25px ;
+
+.sub-content1 > h1 {
+  font-size: 25px;
   color: hsl(237, 23%, 32%);
   /* background-color: rebeccapurple; */
 }
-.full-flex-grid-3{
+.sub-content1 > p {
+  line-height: 30px;
+}
+.sub-content2 > p {
+  line-height: 30px;
+}
+.sub-content2 > h1 {
+  font-size: 25px;
+  color: hsl(237, 23%, 32%);
+  /* background-color: rebeccapurple; */
+}
+.full-flex-grid-3 {
   display: flex;
   flex-direction: column;
-  row-gap: 0px;
+  position: relative;
+  /* row-gap: 0px; */
   /* overflow: hidden; */
 }
-.full-image{
-  /* background-color: black; */
+.full-image {
+  background-color: hsl(207, 13%, 34%);
+  /* position: relative; */
+  /* height: 60vh; */
+  position: relative;
+  width: 100%; /* Adjust the width of the container as needed */
+  height: 400px;
+  overflow: hidden; /* Hide any content that overflows the container */
+  /* height: 90px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center; */
+  align-items: center;
+  align-content: center;
+  padding-bottom: 160px;
+
+}
+.image2,
+.image1 {
+  /* position: absolute;
+  object-fit: cover; */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  object-fit: cover;
+}
+.image1 {
+  z-index: 1;
+  padding-bottom: 500px;
+  overflow: hidden;
+  top: 0;
+  /* height: 600px; */
+}
+
+
+.seperate>.image1{
+  margin-left: 150px;
+}
+.next{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.con11{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
